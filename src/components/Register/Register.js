@@ -8,7 +8,7 @@ const Register = ({ onRegisterUser }) => {
         const email = document.getElementById("user[email]").value;
         const password = document.getElementById("user[password]").value;
         
-        fetch('http://localhost:3001/register', {
+        fetch('https://brain-project.herokuapp.com/register', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

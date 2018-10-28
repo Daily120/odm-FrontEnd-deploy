@@ -8,7 +8,7 @@ const Signin = ({ onSignInUser }) => {
         const login = document.getElementById("login_field").value;
         const password = document.getElementById("password_field").value;
 
-        fetch('http://localhost:3001/signin', {
+        fetch('https://brain-project.herokuapp.com/signin', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -31,7 +31,7 @@ const Signin = ({ onSignInUser }) => {
                 <div className="logged-out env-production page-responsive min-width-0 session-authentication">
                     <div className="header header-logged-out width-full pt-5 pb-4" role="banner">
                         <div className="container clearfix width-full text-center">
-                            <a className="header-logo" href="http://localhost:3000" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+                            <a className="header-logo" href="/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
                                 <svg version="1.1" height="48" width="48" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                     xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 209.32 209.32" style={{enableBackground:'new 0 0 209.32 209.32'}}
                                     xmlSpace="preserve">
